@@ -55,7 +55,7 @@ const Home = () => {
 
                             <Button variant="outline" size="lg">
                                 <Link href="/contact">
-                                    Let's Work Together
+                                    {`Let's Work Together`}
                                 </Link>
                             </Button>
                         </FadeInSection>
