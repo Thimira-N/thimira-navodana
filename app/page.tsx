@@ -1,10 +1,15 @@
 "use client"
 
 import { motion } from "framer-motion";
+import {AnimatedText} from "@/components/ui/animated-text";
+import {FadeInSection} from "@/components/ui/fade-in-section";
+import {Button} from "@/components/ui/button";
+import Link from "next/link";
 
 const Home = () => {
     return (
         <div>
+            {/*hero section*/}
             <section>
                 <div></div>
 
@@ -17,13 +22,60 @@ const Home = () => {
                         className="mb-6"
                         >
                             <span className="text-yellow-600 uppercase tracking-wider text-sm font-medium">
-                                Thimira Navodana
+                                Full-Stack Developer
                             </span>
                         </motion.div>
+
+                        <div className="mb-8">
+                            <AnimatedText
+                                text="Hello there, its Thimira Navodana"
+                                className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium leading-tight text-white/80"
+                            />
+                        </div>
+
+                        <FadeInSection
+                            delay={0.5}
+                            className="mb-10"
+                        >
+                            <p className="text-lg md:text-xl text-gray-400 max-w-5xl mx-auto">
+                                Elevating digital presence through sophisticated design and
+                                cutting-edge development for discerning clients and luxury brands.
+                            </p>
+                        </FadeInSection>
+
+                        <FadeInSection
+                            delay={0.7}
+                            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+                        >
+                            <Button size="lg">
+                                <Link href="/portfolio">
+                                    View Portfolio
+                                </Link>
+                            </Button>
+
+                            <Button variant="outline" size="lg">
+                                <Link href="/contact">
+                                    Let's Work Together
+                                </Link>
+                            </Button>
+                        </FadeInSection>
                     </div>
                 </div>
 
-                <div></div>
+                {/*scroll indicator*/}
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+                    <motion.div
+                    animate={{ y: [0, 10,0] }}
+                    transition={{ repeat: Infinity, duration: 1.5 }}
+                    className="w-6 h-10 rounded-full border-2 border-white/40 flex justify-center pt-2"
+                    >
+                        <motion.div
+                        animate={{ opacity: [0, 1, 0] }}
+                        transition={{ repeat: Infinity, duration: 1.5 }}
+                        className="w-1 h-1 rounded-full bg-white"
+                        />
+                    </motion.div>
+                </div>
             </section>
             <section></section>
             <section></section>
