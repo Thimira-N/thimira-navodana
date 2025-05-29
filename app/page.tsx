@@ -67,13 +67,21 @@ const Home = () => {
                     <motion.div
                     animate={{ y: [0, 10,0] }}
                     transition={{ repeat: Infinity, duration: 1.5 }}
-                    className="w-6 h-10 rounded-full border-2 border-white/40 flex justify-center pt-2"
+                    className="sm:w-6 sm:h-10 sm:rounded-full sm:border-2 sm:border-white/40 sm:flex sm:justify-center sm:pt-2"
                     >
                         <motion.div
                         animate={{ opacity: [0, 1, 0] }}
                         transition={{ repeat: Infinity, duration: 1.5 }}
-                        className="w-1 h-1 rounded-full bg-white"
+                        className="sm:w-1 sm:h-1 sm:rounded-full sm:bg-white"
                         />
+                    </motion.div>
+
+                    <motion.div
+                        animate={{ y: [0, 10,0] }}
+                        transition={{ repeat: Infinity, duration: 1.5 }}
+                        className="block sm:hidden text-white text-sm"
+                    >
+                        <p className="">scroll-up</p>
                     </motion.div>
                 </div>
             </section>
