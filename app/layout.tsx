@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 
 const playfair = Playfair_Display({
     subsets: ['latin'],
@@ -21,11 +23,13 @@ export default function RootLayout({children,}: {
     children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={`${playfair.variable} ${inter.variable} font-sans`}
-      >
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${playfair.variable} ${inter.variable} font-sans bg-everblack text-soft-mint`}>
+        <div className="flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+        </div>
       </body>
     </html>
   );
