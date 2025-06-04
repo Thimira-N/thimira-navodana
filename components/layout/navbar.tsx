@@ -135,6 +135,15 @@ const Navbar = () => {
                                     {item.name}
                                 </Link>
                             ))}
+
+                            <Link
+                                href="/"
+                                className="relative z-10 top-5/6"
+                            >
+                                <h1 className="text-xl md:text-2xl font-serif font-semibold text-muted-sage hover:text-moss-gray transition-colors">
+                                    Thimira | <span className="text-moss-gray">N</span>
+                                </h1>
+                            </Link>
                         </nav>
                     </motion.div>
                 )}
