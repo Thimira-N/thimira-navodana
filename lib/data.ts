@@ -1,3 +1,4 @@
+import type { StaticImageData } from "next/image";
 import { Paintbrush, Code, Layout, Lightbulb, Layers, PenTool } from "lucide-react";
 import kasuns from "@/public/kasuns.jpg";
 import kasuns2 from "@/public/kasuns2.jpg";
@@ -6,7 +7,16 @@ import araliya2 from "@/public/araliya2.jpg";
 import fisherman from "@/public/fisherman.jpg";
 import neo from "@/public/neo.jpg";
 
-export const projects = [
+type Project = {
+    id: string;
+    title: string;
+    category: string;
+    description: string;
+    imageUrl: string | StaticImageData;
+    slug: string;
+};
+
+export const projects: Project[] = [
     {
         id: "1",
         title: "Kasun's",
