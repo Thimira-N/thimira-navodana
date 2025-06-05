@@ -10,6 +10,7 @@ import { projects, services, testimonials } from "@/lib/data";
 import {ProjectCard} from "@/components/ui/project-card";
 import { ArrowRight } from "lucide-react";
 import {ServiceCard} from "@/components/ui/service-card";
+import {StaticImageData} from "next/image";
 
 
 
@@ -105,7 +106,7 @@ const Home = () => {
                         align="center" />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {projects.slice(0, 3).map((project, index) => (
+                        {projects.slice(0, 3).map((project : { id: string; title: string; category: string; description: string; imageUrl: StaticImageData; slug: string; }, index) => (
                             <ProjectCard
                                 key={project.id}
                                 project={project}
