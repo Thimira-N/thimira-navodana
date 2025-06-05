@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
@@ -11,7 +11,8 @@ export interface Project {
     title: string;
     category: string;
     description: string;
-    imageUrl: string;
+    // imageUrl: string;
+    imageUrl: StaticImageData;
     slug: string;
 }
 
