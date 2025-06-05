@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
-export type Project = {
+export interface Project {
     id: string;
     title: string;
     category: string;
