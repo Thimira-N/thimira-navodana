@@ -12,7 +12,7 @@ export type Project = {
     title: string;
     category: string;
     description: string;
-    imageUrl: string | StaticImageData;
+    imageUrl: any;
     slug: string;
 };
 
