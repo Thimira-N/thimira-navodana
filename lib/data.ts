@@ -3,52 +3,75 @@ import { Paintbrush, Code, Layout, Lightbulb, Layers, PenTool } from "lucide-rea
 export const projects = [
     {
         id: "1",
-        title: "Luxury Fashion E-commerce",
+        title: "Kasun's",
         category: "Web Development",
-        description: "A premium fashion retail experience with advanced filtering and 3D product previews.",
+        description: "Authentic Sri Lankan Craftsmanship of Handmade with Passion.",
         imageUrl: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         slug: "luxury-fashion-ecommerce"
     },
+
     {
         id: "2",
-        title: "Architectural Visualization",
-        category: "3D Design",
-        description: "Photorealistic renderings and interactive 3D models for an award-winning architecture firm.",
-        imageUrl: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        slug: "architectural-visualization"
+        title: "Araliya",
+        category: "Web Development",
+        description: "Immersive website for a restaurant with online reservation system.",
+        imageUrl: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        slug: "luxury-fashion-restaurant"
     },
+
     {
         id: "3",
-        title: "Financial Advisory Platform",
+        title: "Neo-Metropolis",
         category: "Web Application",
-        description: "A secure financial advisory platform with real-time data visualization and client management.",
+        description: "A Cyber Security Response System for Neo Metropolis Smart City.",
         imageUrl: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        slug: "financial-advisory-platform"
+        slug: "neo-metropolis"
     },
+
     {
         id: "4",
-        title: "Sustainable Packaging",
-        category: "Branding",
-        description: "Complete brand identity and packaging design for an eco-conscious luxury brand.",
-        imageUrl: "https://images.pexels.com/photos/4464483/pexels-photo-4464483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        slug: "sustainable-packaging"
+        title: "The Fisherman",
+        category: "Mobile App",
+        description: "A Mobile Application for Fulfil all the needs of Fishermen.",
+        imageUrl: "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        slug: "the-fisherman"
     },
+
     {
         id: "5",
-        title: "Smart Home Application",
-        category: "Mobile App",
-        description: "IoT-connected smart home control system with intuitive interface and voice commands.",
-        imageUrl: "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        slug: "smart-home-application"
+        title: "Kasun's - Web Design",
+        category: "Web Design",
+        description: "Figma Design for E-Commerce Website.",
+        imageUrl: "https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        slug: "kasun's-design"
     },
+
     {
         id: "6",
-        title: "Culinary Experience",
+        title: "Araliya - Web Design",
         category: "Web Design",
-        description: "Immersive website for a Michelin-starred restaurant with online reservation system.",
+        description: "Figma Design for Restaurant Website.",
         imageUrl: "https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        slug: "culinary-experience"
+        slug: "araliya-design"
     }
+
+    // {
+    //     id: "7",
+    //     title: "Architectural Visualization",
+    //     category: "3D Design",
+    //     description: "Photorealistic renderings and interactive 3D models for an award-winning architecture firm.",
+    //     imageUrl: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    //     slug: "architectural-visualization"
+    // },
+
+    // {
+    //     id: "8",
+    //     title: "Sustainable Packaging",
+    //     category: "Branding",
+    //     description: "Complete brand identity and packaging design for an eco-conscious luxury brand.",
+    //     imageUrl: "https://images.pexels.com/photos/4464483/pexels-photo-4464483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    //     slug: "sustainable-packaging"
+    // },
 ];
 
 
