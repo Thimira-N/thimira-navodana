@@ -12,7 +12,7 @@ export type Project = {
     title: string;
     category: string;
     description: string;
-    imageUrl: any;
+    imageUrl: string;
     slug: string;
 };
 
@@ -22,8 +22,7 @@ export const projects: Project[] = [
         title: "Kasun's",
         category: "Web Development",
         description: "Authentic Sri Lankan Craftsmanship of Handmade with Passion.",
-        // imageUrl: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        imageUrl: kasuns,
+        imageUrl: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         slug: "luxury-fashion-ecommerce"
     },
 
@@ -32,8 +31,7 @@ export const projects: Project[] = [
         title: "Araliya",
         category: "Web Development",
         description: "Immersive website for a restaurant with online reservation system.",
-        // imageUrl: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        imageUrl: araliya,
+        imageUrl: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         slug: "luxury-fashion-restaurant"
     },
 
@@ -42,8 +40,7 @@ export const projects: Project[] = [
         title: "Neo-Metropolis",
         category: "Web Application",
         description: "A Cyber Security Response System for Neo Metropolis Smart City.",
-        // imageUrl: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        imageUrl: neo,
+        imageUrl: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         slug: "neo-metropolis"
     },
 
@@ -52,8 +49,7 @@ export const projects: Project[] = [
         title: "The Fisherman",
         category: "Mobile App",
         description: "A Mobile Application for Fulfil all the needs of Fishermen.",
-        // imageUrl: "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        imageUrl: fisherman,
+        imageUrl: "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         slug: "the-fisherman"
     },
 
@@ -62,8 +58,7 @@ export const projects: Project[] = [
         title: "Kasun's - Web Design",
         category: "Web Design",
         description: "Figma Design for E-Commerce Website.",
-        // imageUrl: "https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        imageUrl: kasuns2,
+        imageUrl: "https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         slug: "kasun's-design"
     },
 
@@ -72,8 +67,7 @@ export const projects: Project[] = [
         title: "Araliya - Web Design",
         category: "Web Design",
         description: "Figma Design for Restaurant Website.",
-        // imageUrl: "https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        imageUrl: araliya2,
+        imageUrl: "https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         slug: "araliya-design"
     }
 

@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import type { StaticImageData } from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
@@ -12,7 +11,7 @@ export type Project = {
     title: string;
     category: string;
     description: string;
-    imageUrl: any;
+    imageUrl: string;
     slug: string;
 }
 
