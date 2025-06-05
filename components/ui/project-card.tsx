@@ -3,18 +3,19 @@
 import React from "react";
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
+import type { Project } from "@/lib/data";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
-type Project = {
-    id: string;
-    title: string;
-    category: string;
-    description: string;
-    imageUrl: string | StaticImageData;
-    slug: string;
-}
+// type Project = {
+//     id: string;
+//     title: string;
+//     category: string;
+//     description: string;
+//     imageUrl: string | StaticImageData;
+//     slug: string;
+// }
 
 interface ProjectCardProps {
     project: Project;

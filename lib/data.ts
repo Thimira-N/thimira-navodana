@@ -7,7 +7,7 @@ import araliya2 from "@/public/araliya2.jpg";
 import fisherman from "@/public/fisherman.jpg";
 import neo from "@/public/neo.jpg";
 
-type Project = {
+export type Project = {
     id: string;
     title: string;
     category: string;
