@@ -11,8 +11,7 @@ export interface Project {
     title: string;
     category: string;
     description: string;
-    // imageUrl: string;
-    imageUrl: StaticImageData;
+    imageUrl: string | StaticImageData;
     slug: string;
 }
 
