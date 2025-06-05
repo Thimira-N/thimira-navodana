@@ -94,9 +94,10 @@ const About = () => {
                     <SectionHeading
                         title="Professional Journey"
                         subtitle="A timeline of key experiences that have shaped my career and expertise."
+                        align="center"
                     />
 
-                    <div className="relative ml-4 md:ml-8 pl-8 space-y-12">
+                    <div className="py-10 relative ml-4 md:ml-8 pl-8 space-y-12">
                         {/* Static background line */}
                         <div className="absolute left-0 top-0 w-0.5 h-full bg-forest-base"></div>
 
