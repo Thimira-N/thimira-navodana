@@ -157,3 +157,95 @@ export const testimonials = [
         imageUrl: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     }
 ];
+
+
+export const skills = [
+    {
+        category: "Design",
+        items: [
+            "UI/UX Design",
+            "Brand Identity",
+            "Typography",
+            "Motion Design",
+            "3D Visualization"
+        ]
+    },
+
+    {
+        category: "Development",
+        items: [
+            "React/Next.js",
+            "TypeScript",
+            "Node.js",
+            "Three.js (currently studying)",
+            "Framer Motion"
+        ]
+    },
+
+    {
+        category: "Tools",
+        items: [
+            "Figma",
+            "Adobe Photoshop",
+            "Webstorm",
+            "VS Code",
+            "GitHub",
+            "Vercel"
+        ]
+    }
+];
+
+
+export const workExperience = [
+    {
+        id: "1",
+        role: "UI/UX Design Lead",
+        company: "E-Commerce",
+        period: "2024 - Present",
+        description: "Directed user experience strategy and interface design for high-end e-commerce and finance sector clients.",
+        achievements: [
+            "Redesigned handmade product increasing conversion rates by 25%",
+            "Mentored fellow designers, implementing growth framework for team skill development",
+            "Collaborated with clients and stakeholders to collect feedback for better improvement process"
+        ]
+    },
+
+    {
+        id: "2",
+        role: "Real World Solutions",
+        company: "Neo-Metropolis Smart City",
+        period: "2025",
+        description: "Built a solution for cyber-attack scenario",
+        achievements: [
+            "Implemented a new system for the city management",
+            "Used proper data structures",
+            "Increased security on the new system with proper management options"
+        ]
+    },
+
+    {
+        id: "3",
+        role: "Mobile App Developer",
+        company: "Fisheries Departments",
+        period: "2025",
+        description: "Developed custom mobile application solution with focus on performance and sophisticated interactions for luxury clientele.",
+        achievements: [
+            "Built mobile application for fishermen",
+            "Implemented advanced animation techniques and easy interactions",
+            "Optimized the app for fishermen (mainly focused on out-door use)",
+        ]
+    },
+
+    {
+        id: "4",
+        role: "Web Developer",
+        company: "E-Commerce (Handmade Products, Restaurant)",
+        period: "2024 - 2025",
+        description: "Developed custom web solutions with focus on performance and sophisticated interactions for luxury clientele.",
+        achievements: [
+            "Built award-winning websites for e-commerce related clients",
+            "Implemented advanced animation techniques that became agency signature",
+            "Optimized site performance improving load times by 60%"
+        ]
+    }
+];
