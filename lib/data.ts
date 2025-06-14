@@ -59,7 +59,17 @@ export const projects = [
         // imageUrl: "https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         imageUrl: "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         slug: "araliya-design"
-    }
+    },
+
+    {
+        id: "7",
+        title: "ToDo Cabin",
+        category: "Web Application",
+        description: "Application for member registry, to-do task management, and minute tracking with real-time data saving and spreadsheet-style work logging.",
+        // imageUrl: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        imageUrl: "https://images.pexels.com/photos/3299/postit-scrabble-to-do.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        slug: "todo-cabin"
+    },
 
     // {
     //     id: "7",
