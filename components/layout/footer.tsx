@@ -103,7 +103,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Contact Info */}
+                    {/*contact info*/}
                     <div className="md:col-span-4 lg:col-span-3 md:col-start-10">
                         <h3 className="text-sm uppercase tracking-wider text-muted-smoke font-medium mb-4 flex items-center">
                             <span className="w-3 h-0.5 bg-sage-hover mr-2"></span>
