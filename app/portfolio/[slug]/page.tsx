@@ -7,10 +7,10 @@ import Link from "next/link";
 import { useMemo } from "react";
 import { notFound } from "next/navigation";
 import {ProjectCard} from "@/components/ui/project-card";
-// import type { Metadata, ResolvingMetadata } from 'next'
+import type { PageProps } from 'next'
 
 
-type Props = {
+interface Props extends PageProps {
     params: { slug: string }
     searchParams: { [key: string]: string | string[] | undefined }
 }
