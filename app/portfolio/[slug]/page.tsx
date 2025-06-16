@@ -7,13 +7,13 @@ import Link from "next/link";
 import { useMemo } from "react";
 import { notFound } from "next/navigation";
 import {ProjectCard} from "@/components/ui/project-card";
-import type { PageProps } from 'next'
 
 
-interface Props extends PageProps {
+interface Props {
     params: { slug: string }
-    searchParams: { [key: string]: string | string[] | undefined }
+    searchParams?: { [key: string]: string | string[] | undefined }
 }
+
 
 export async function generateStaticParams() {
     return projects.map((project) => ({
@@ -23,7 +23,7 @@ export async function generateStaticParams() {
 
 export const dynamicParams = false;
 
-const Project = ({ params }: Props) => {
+const Project = ({ params, searchParams }: Props) => {
     const project = projects.find((p) => p.slug === params.slug);
 
     if (!project) {
