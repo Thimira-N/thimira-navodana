@@ -15,17 +15,27 @@ export async function generateStaticParams() {
     }));
 }
 
+export type PageProps = {
+    params: {
+        slug: string
+    }
+}
+
 export const dynamicParams = false;
 
-const Project = ({ params }: { params: { slug: string } }) => {
-    // const params = useParams();
-    const slug = params?.slug as string;
+// const Project = ({ params }: { params: { slug: string } }) => {
+//     // const params = useParams();
+//     const slug = params?.slug as string;
+//
+//     // const project = useMemo(() => {
+//     //     return projects.find((p) => p.slug === slug);
+//     // }, [slug]);
+//
+//     const project = projects.find((p) => p.slug === slug);
 
-    // const project = useMemo(() => {
-    //     return projects.find((p) => p.slug === slug);
-    // }, [slug]);
+const Project = ({ params }: PageProps) => {
+    const project = projects.find((p) => p.slug === params.slug)
 
-    const project = projects.find((p) => p.slug === slug);
 
     if (!project) {
         notFound();
