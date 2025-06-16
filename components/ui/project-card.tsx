@@ -10,7 +10,7 @@ export interface Project {
     id: string;
     title: string;
     category: string;
-    description: string;
+    shortDescription: string;
     imageUrl: string;
     slug: string;
 }
@@ -50,7 +50,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                                 {project.title}
                             </h3>
                             <p className="text-muted-smoke text-sm max-w-md opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                                {project.description}
+                                {project.shortDescription}
                             </p>
                         </div>
                         <span className="w-10 h-9 rounded-full bg-muted-sage text-everblack flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">

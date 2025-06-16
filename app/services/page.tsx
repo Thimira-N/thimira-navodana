@@ -23,9 +23,9 @@ const Services = () => {
                             transition={{ duration: 0.5 }}
                             className="mb-6"
                         >
-              <span className="text-moss-gray uppercase tracking-wider text-sm font-medium">
-                Services
-              </span>
+                          <span className="text-moss-gray uppercase tracking-wider text-sm font-medium">
+                            Services
+                          </span>
                         </motion.div>
                         <motion.h1
                             initial={{ opacity: 0, y: 20 }}
