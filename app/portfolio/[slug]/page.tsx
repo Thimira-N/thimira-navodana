@@ -8,28 +8,25 @@ import { useMemo } from "react";
 import { notFound } from "next/navigation";
 import {ProjectCard} from "@/components/ui/project-card";
 
-
 export async function generateStaticParams() {
     return projects.map((project) => ({
         slug: project.slug,
     }));
 }
 
+// Fixed PageProps type - params should be a Promise
 export type PageProps = {
-    params: {
+    params: Promise<{
         slug: string
-    }
+    }>
 }
 
 export const dynamicParams = false;
 
-const Project = ({ params }: { params: { slug: string } }) => {
-    // const params = useParams();
-    const slug = params?.slug as string;
-
-    // const project = useMemo(() => {
-    //     return projects.find((p) => p.slug === slug);
-    // }, [slug]);
+// Updated component to handle async params
+const Project = async ({ params }: PageProps) => {
+    // Await the params since it's now a Promise
+    const { slug } = await params;
 
     const project = projects.find((p) => p.slug === slug);
 
@@ -38,12 +35,9 @@ const Project = ({ params }: { params: { slug: string } }) => {
     }
 
     // Related projects - excluding current project, limiting to 3
-    const relatedProjects = useMemo(() => {
-        return projects
-            .filter((p) => p.id !== project.id)
-            .slice(0, 3);
-    }, [project]);
-
+    const relatedProjects = projects
+        .filter((p) => p.id !== project.id)
+        .slice(0, 3);
 
     return (
         <div className="pt-20">
@@ -298,4 +292,5 @@ const Project = ({ params }: { params: { slug: string } }) => {
         </div>
     )
 }
+
 export default Project
