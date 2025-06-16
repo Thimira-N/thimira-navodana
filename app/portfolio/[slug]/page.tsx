@@ -9,22 +9,29 @@ import { notFound } from "next/navigation";
 import {ProjectCard} from "@/components/ui/project-card";
 
 
-interface Props {
-    params: { slug: string }
-    searchParams?: { [key: string]: string | string[] | undefined }
-}
-
-
 export async function generateStaticParams() {
     return projects.map((project) => ({
         slug: project.slug,
     }));
 }
 
+export type PageProps = {
+    params: {
+        slug: string
+    }
+}
+
 export const dynamicParams = false;
 
-const Project = ({ params, searchParams }: Props) => {
-    const project = projects.find((p) => p.slug === params.slug);
+const Project = ({ params }: { params: { slug: string } }) => {
+    // const params = useParams();
+    const slug = params?.slug as string;
+
+    // const project = useMemo(() => {
+    //     return projects.find((p) => p.slug === slug);
+    // }, [slug]);
+
+    const project = projects.find((p) => p.slug === slug);
 
     if (!project) {
         notFound();
