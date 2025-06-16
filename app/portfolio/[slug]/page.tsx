@@ -21,9 +21,11 @@ const Project = ({ params }: { params: { slug: string } }) => {
     // const params = useParams();
     const slug = params?.slug as string;
 
-    const project = useMemo(() => {
-        return projects.find((p) => p.slug === slug);
-    }, [slug]);
+    // const project = useMemo(() => {
+    //     return projects.find((p) => p.slug === slug);
+    // }, [slug]);
+
+    const project = projects.find((p) => p.slug === slug);
 
     if (!project) {
         notFound();
