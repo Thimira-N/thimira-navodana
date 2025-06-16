@@ -7,7 +7,13 @@ import Link from "next/link";
 import { useMemo } from "react";
 import { notFound } from "next/navigation";
 import {ProjectCard} from "@/components/ui/project-card";
+// import type { Metadata, ResolvingMetadata } from 'next'
 
+
+type Props = {
+    params: { slug: string }
+    searchParams: { [key: string]: string | string[] | undefined }
+}
 
 export async function generateStaticParams() {
     return projects.map((project) => ({
@@ -15,27 +21,10 @@ export async function generateStaticParams() {
     }));
 }
 
-export type PageProps = {
-    params: {
-        slug: string
-    }
-}
-
 export const dynamicParams = false;
 
-// const Project = ({ params }: { params: { slug: string } }) => {
-//     // const params = useParams();
-//     const slug = params?.slug as string;
-//
-//     // const project = useMemo(() => {
-//     //     return projects.find((p) => p.slug === slug);
-//     // }, [slug]);
-//
-//     const project = projects.find((p) => p.slug === slug);
-
-const Project = ({ params }: PageProps) => {
-    const project = projects.find((p) => p.slug === params.slug)
-
+const Project = ({ params }: Props) => {
+    const project = projects.find((p) => p.slug === params.slug);
 
     if (!project) {
         notFound();
